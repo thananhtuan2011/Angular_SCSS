@@ -1,0 +1,33 @@
+@use "sass:math";
+
+@mixin fontDefault {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+@mixin required-dot {
+    background-color: $info;
+    border-radius: 50%;
+    width: 5px;
+    min-width: 5px;
+    max-width: 5px;
+    height: 5px;
+    min-height: 5px;
+    max-height: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@mixin _avatar($size, $circle: false) {
+    width: $size;
+    height: $size;
+
+    @if $circle {
+        border-radius: math.div($size, 2);
+    }
+
+    @else {}
+
+}

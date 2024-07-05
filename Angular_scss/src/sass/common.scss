@@ -1,0 +1,36 @@
+.required {
+    &-dot {
+        @include required-dot;
+    }
+
+    // &-tag {
+    //     &:not(:empty) {
+    //         @include required-tag;
+    //     }
+
+    //     &:empty {
+    //         @include inside-required-tag;
+    //     }
+    // }
+}
+
+.avatar {
+    @include _avatar($small, $circle: true);
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: $primary;
+
+
+    &:hover {
+        border: none;
+        border-radius: 10px;
+        background: red;
+    }
+}
+
+.title {
+    @include fontDefault;
+}
