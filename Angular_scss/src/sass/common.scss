@@ -3,6 +3,10 @@
         @include required-dot;
     }
 
+    &-tagname {
+        @include required-tag;
+    }
+
     // &-tag {
     //     &:not(:empty) {
     //         @include required-tag;
@@ -27,7 +31,6 @@ button {
     &:hover {
         border: none;
         border-radius: 10px;
-        background: red;
     }
 }
 

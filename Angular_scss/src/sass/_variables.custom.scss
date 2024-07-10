@@ -3,6 +3,16 @@
 // Note that this file is included first and variables defined in _variables.bootstrap.scss and _variables.custom.scss
 // are not accessible in this file but you can override any global variable as shown below:
 //
+
+$font-family-default: HelveticaNowDisplay, sans-serif;
+$font-size-default: 13px;
+
+$line-height-default: 20px;
+
+$font-weight-bold: 700;
+$font-weight-semibold: 500;
+$font-weight-regular: 400;
+
 $small: 50px;
 // Bootstrap color system
 $white: #ffffff;
